@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <main>
+      <section class="chart-container">
+        <article class="chart-balance">
+            <div class="row">
+              <span>My balance</span>
+              <h1> $921.48</h1>
+            </div>
+            <div class="row">
+              <img src="images/logo.svg" alt="chart-logo">
+            </div>
+        </article>
+        <article class="main-chart">
+           <div class="center-box">
+            <h2 class="brown-color"> Spending - Last 7 days</h2>
+           <div class="container-progress">
+           
+            <div class="item">
+              <div class="progress-bar  progress-0" onclick="blueColor()">
+                 <div class="box-info">
+                  <p>$17.45</p>
+                 </div>
+              </div>
+              <span class="medium-color">mon</span>
+            </div>
+            <div class="item">
+              <div class="progress-bar  progress-1"   onclick="blueColor()">
+                 <div class="box-info">
+                  <p>$34.91</p>
+                 </div>
+              </div>
+              <span class="medium-color">tue</span>
+            </div>
+             <div class="item">
+              <div class="progress-bar active  progress-2 "  onclick="blueColor()">
+                 <div class="box-info">
+                  <p>$52.36</p>
+                 </div>
+              </div>
+              <span class="medium-color">wed</span>
+            </div>
+             <div class="item">
+              <div class="progress-bar  progress-3"   onclick="blueColor()">
+                 <div class="box-info">
+                  <p>$31.07</p>
+                 </div>
+              </div>
+              <span class="medium-color move">thu</span>
+            </div>
+            <div class="item">
+              <div class="progress-bar  progress-4"  onclick="blueColor()">
+                 <div class="box-info">
+                  <p>$23.39</p>
+                 </div>
+              </div>
+              <span class="medium-color move">fri</span>
+            </div>
+            <div class="item">
+              <div class="progress-bar  progress-5"   onclick="blueColor()">
+                 <div class="box-info">
+                  <p>$43.28</p>
+                 </div>
+              </div>
+              <span class="medium-color move">sat</span>
+            </div>
+            <div class="item">
+              <div class="progress-bar  progress-6"   onclick="blueColor()">
+                 <div class="box-info">
+                  <p>$25.48</p>
+                 </div>
+              </div>
+              <span class="medium-color move">sun</span>
+            </div>
+         
+           </div>
+           </div>
+           <div class="line"></div>
+           <article class="prices">
+            <div class="row">
+              <span class="medium-color"> Total this month</span>
+              <h3  id="big" class="brown-color"> $478.33</h3>
+            </div>
+            <div class="row row-2">
+              <h3 class="brown-color">+2.4%</h3>
+              <span class="medium-color">  from last month</span>
+            </div>
+        </article>
+        </article>
+
+      
+      </section>
+   </main>
+  <!--
+
+  Total this month
+  $478.33
+
+  +2.4%
+  from last month
+  
+  -->
+  <script  src="./js/chart.js"></script>
+  <!--<script type="module">
+    import data from "../data.json" assert { type: "json" };
+  </script>-->
+</body>
+</html>
